@@ -36,7 +36,7 @@ resource "aws_ecs_cluster" "gameshop-cluster" {
 }
 
 resource "aws_ecs_capacity_provider" "gameshop-capacity-provider" {
-  name                 = "gameshop_capacity_provider"
+  name                 = "gameshop_capacity_provider-1"
   auto_scaling_group_provider {
     auto_scaling_group_arn = aws_autoscaling_group.gameshop_asg.arn
 

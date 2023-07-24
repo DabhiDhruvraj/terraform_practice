@@ -15,7 +15,7 @@ resource "random_password" "password" {
 # Creating a AWS secret for database master account (gameshopdb)
  
 resource "aws_secretsmanager_secret" "secretmasterDB" {
-   name = "gameshopdb"
+   name = "gameshopdb-1"
 }
 # Creating a AWS secret versions for database master account (Masteraccoundb)
  
